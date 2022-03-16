@@ -1,15 +1,25 @@
-import logo from './logo.svg';
 import Navbar from './components/NavbarComponent';
-import Hero from './components/HeroComponent';
+import Content from './components/ContentComponent';
 import Cards from './components/CardsComponent';
+import { HERO } from './shared/hero';
 import './App.css';
 
 function App() {
+
+  // const myCards = hero.map(item => {
+  //   return (
+
+  //   )
+  // })
+
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <Cards />
+      <Content />
+      <Cards hero={HERO}
+        img="KatieZaferes.png"
+        rating="4.0"
+      />
     </div>
   );
 }

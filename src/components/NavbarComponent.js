@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <>
         <Nav>
-            <img className="logo" alt="airbnb logo" src="airbnb-logo.png"></img>
+            <img className="logo" alt="airbnb logo" src="assets/airbnb-logo.png"></img>
         </Nav>
         </>
     );
