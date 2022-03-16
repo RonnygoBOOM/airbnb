@@ -17,8 +17,6 @@ function App() {
       <Navbar />
       <Content />
       <Cards hero={HERO}
-        img="KatieZaferes.png"
-        rating="4.0"
       />
     </div>
   );

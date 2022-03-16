@@ -42,7 +42,18 @@ body {
   text-align: left;
 }
 
+.card {
+    width: 33vw !important;
+    flex: 0 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: none !important;
+}
+
+/* How do I fix the card width? */
 .card-img {
+
+
   border-radius: .7em !important;
 }
 
@@ -58,3 +69,4 @@ body {
   margin: 0;
   padding: 0;
 }
+

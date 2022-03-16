@@ -1,34 +1,31 @@
 import React from 'react';
 import { Card, CardBody, CardText, CardImg, Container, Row, Col } from 'reactstrap';
 function Cards(props) {
-
-
-    return (
-    <>
-        <Card>
-            <Container>
-                <Row>
+    const myCard = props.hero.map(item => {
+        return (
+                <Card>
                     <Col sm={{size:3}}>
-                        <CardBody>
-                            <CardImg src={props.hero.image} alt="Katie Zaferes"></CardImg>
+                            <CardImg src={item.coverImg} alt={item.alt}></CardImg>
                             <CardText>
                                 <img src="assets/star.png" alt="star"></img>
-                                <p>{props.hero.rating} ({props.hero.reviewCount}) - {props.hero.location}</p>
+                                <p>{item.rating} ({item.reviewCount}) - {item.location}</p>
                             </CardText>
                             <CardText>
-                                <p>{props.hero.title}</p>
+                                <p>{item.title}</p>
                             </CardText>
                             <CardText>
-                                <p><b>From {"$"}{props.hero.price}</b>/person</p>
+                                <p><b>From {"$"}{item.price}</b>/person</p>
                             </CardText>
-                        </CardBody>
                     </Col>
-                </Row>
-            </Container>
-        </Card>
-
-
-    </>
+                </Card>
+        )
+    })
+    return (
+        <>
+            <Row className="card-row">
+                {myCard}
+            </Row>
+        </>
     );
 }
 
