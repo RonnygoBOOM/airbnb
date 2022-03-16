@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Navbar from './components/NavbarComponent';
 import Hero from './components/HeroComponent';
+import Cards from './components/CardsComponent';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Cards />
     </div>
   );
 }
