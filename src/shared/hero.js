@@ -6,8 +6,10 @@ export const HERO = [
         price: 136,
         coverImg: "assets/KatieZaferes.png",
         alt: "KatieZaferes",
-        rating: 5.0,
-        reviewCount: 6,
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+            },
         location: "Online",
         openSpots: 0,
     },
@@ -18,8 +20,10 @@ export const HERO = [
         price: 125,
         coverImg: "assets/wedding-photography.png",
         alt: "wedding-photography",
-        rating: 5.0,
-        reviewCount: 30,
+        stats: {
+            rating: 5.0,
+            reviewCount: 30
+            },
         location: "Online",
         openSpots: 27,
     },
@@ -30,8 +34,10 @@ export const HERO = [
         price: 50,
         coverImg: "assets/mountain-bike.png",
         alt: "mountain-bike",
-        rating: 4.8,
-        reviewCount: 2,
+        stats: {
+            rating: 4.8,
+            reviewCount: 2
+            },
         location: "Norway",
         openSpots: 3,
     }
